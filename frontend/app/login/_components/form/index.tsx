@@ -27,7 +27,6 @@ const Form = () => {
   const {
     register,
     handleSubmit,
-    setError,
     formState: { errors },
   } = useForm<{
     email: string
@@ -42,7 +41,7 @@ const Form = () => {
     await fetchAuthDemoMode()
   }
 
-  const onSubmit = handleSubmit(async (data) => {
+  const onSubmit = handleSubmit(async () => {
     setLoading(true)
     // Без бэкенда сразу переключаем в демо-режим
     localStorage.setItem("demoMode", "true")

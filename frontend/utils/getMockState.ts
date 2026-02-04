@@ -377,7 +377,7 @@ export default function getMockState() {
         },
         {
           avatar: "/images/avatars/ella-phillips.jpg",
-          name: "Adriano",
+          name: "Eldar",
           category: "Dining Out",
           date: "2025-02-14T19:22:51Z",
           amount: -125.0,

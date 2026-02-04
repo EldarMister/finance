@@ -1,11 +1,11 @@
 # Finance (frontend-only)
 
-Одностраничное приложение для учета личных финансов (баланс, транзакции, бюджеты, накопительные «pots»). Проект сейчас работает полностью в демо-режиме: данные берутся из `public/data.json`, бэкенд и регистрация отключены.
+Одностраничное приложение для учёта личных финансов (баланс, транзакции, бюджеты, накопительные «pots»). Проект сейчас работает полностью в демо-режиме: данные берутся из `public/data.json`, бэкенд и регистрация отключены.
 
 ## Технологии
 - Next.js + React, TypeScript
 - Tailwind CSS
-- Redux Toolkit (zustand-like store), react-hook-form
+- Redux Toolkit, react-hook-form
 - Framer Motion (анимации)
 - Jest / Testing Library, Playwright (опционально для E2E)
 

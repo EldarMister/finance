@@ -22,7 +22,6 @@ const Form = () => {
   const {
     register,
     handleSubmit,
-    setError,
     formState: { errors },
   } = useForm<{
     name: string
@@ -38,7 +37,7 @@ const Form = () => {
     await fetchAuthDemoMode()
   }
 
-  const onSubmit = handleSubmit(async (data) => {
+  const onSubmit = handleSubmit(async () => {
     setLoading(true)
     // Без бэкенда сразу включаем демо-режим и грузим мок-данные
     localStorage.setItem("demoMode", "true")
